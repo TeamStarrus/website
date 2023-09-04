@@ -1,4 +1,4 @@
-https://imgur.com/iJh9KaC.png
+![Starrus Logo](https://imgur.com/iJh9KaC.png)
 
 # Starrus Discord Bot
 
