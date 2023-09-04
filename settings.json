@@ -4,10 +4,10 @@
     "server": "nnCSmPeaGV",
     "versions": {
       "starrus": "23.5.18",
-      "discordJs": "14.13.0",
-      "discordJsRest": "2.0.1",
-      "discordApiTypes": "0.37.55",
-      "lastUpdatedOn": "18 Mayıs 2023"
+      "discordjs": "14.13.0",
+      "discordjsrest": "2.0.1",
+      "discordapitypes": "0.37.55",
+      "lastupdatedon": "18 Mayıs 2023"
     },
     "ownerId": "687021258273194016",
     "logChannel": "<LOG-CHANNELS-ID>",
