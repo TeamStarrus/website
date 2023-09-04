@@ -1,7 +1,7 @@
 module.exports = {
   run: async (client, guild) => {
 
-  const log = client.channels.cache.get(client.settings.config.logchannel);
+  const log = client.channels.cache.get(client.settings.config.logChannel);
   const {ActionRowBuilder, ButtonBuilder, ButtonStyle, EmbedBuilder} = require(`discord.js`);
 
   var VerificationLevel = guild.verificationLevel, verificationLevel = (VerificationLevel == `NONE` ? (`Yok`) : (VerificationLevel == `LOW` ? (`Düşük`) : (VerificationLevel == `MEDIUM` ? (`Orta`) : (VerificationLevel == `HIGH` ? (`Yüksek`) : (VerificationLevel == `VERY_HIGH` ? (`Çok Yüksek`) : (`Bilinmiyor/Bulunamadı`))))));
@@ -21,7 +21,7 @@ module.exports = {
       .setStyle(ButtonStyle.Danger)
     );
 
-  const filter = i => i.customId == `leave` && i.user.id == client.settings.config.owner,
+  const filter = i => i.customId == `leave` && i.user.id == client.settings.config.ownerId,
   collector = log.createMessageComponentCollector({filter});
 
   collector.on(`collect`, async i => {
@@ -35,7 +35,7 @@ module.exports = {
           .setDisabled(true)
         );
 
-      await i.update({content: `<@!${client.settings.config.owner}> kullanıcısının isteği üzerine bu sunucudan ayrıldım!`, components: [row], allowedMentions: {repliedUser: false}});
+      await i.update({content: `<@!${client.settings.config.ownerId}> kullanıcısının isteği üzerine bu sunucudan ayrıldım!`, components: [row], allowedMentions: {repliedUser: false}});
 
 		  await client.guilds.cache.get(guild.id).leave();
 	  };
