@@ -4,13 +4,13 @@
     "server": "nnCSmPeaGV",
     "versions": {
       "starrus": "23.5.18",
-      "discordjs": "14.13.0",
-      "discordjsrest": "2.0.1",
-      "discordapitypes": "0.37.55",
-      "lastupdatedon": "18 Mayıs 2023"
+      "discordJs": "14.13.0",
+      "discordJsRest": "2.0.1",
+      "discordApiTypes": "0.37.55",
+      "lastUpdatedOn": "18 Mayıs 2023"
     },
     "ownerId": "687021258273194016",
-    "logchannel": "<LOG-CHANNELS-ID>",
+    "logChannel": "<LOG-CHANNELS-ID>",
     "emotes": {
       "greenTick": "<:greentick:873518878897102908>",
       "redTick": "<:redtick:873519733356523520>"
