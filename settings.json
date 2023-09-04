@@ -15,7 +15,7 @@
       "greenTick": "<:greentick:873518878897102908>",
       "redTick": "<:redtick:873519733356523520>"
     },
-    "id": "<YOUR-BOTS-ID>",
+    "clientId": "<YOUR-BOTS-CLIENTID>",
     "token": "<YOUR-BOTS-TOKEN>"
   }
 }
