@@ -1,7 +1,6 @@
 # Starrus Discord Bot
 
-### Support has ended by developer and it has been made open source for everyone to benefit from.
+## Starrus, Discord için 18.05.2020 tarihinde geliştirilmeye başlanan ve 18.05.2023 tarihinde desteği sona erdirilen bir eğlence botudur. Komutlar tamamen Türkçe olarak yazılmıştır. Herkesin yararlanabilmesi adına bot açık kaynak kodlu olarak GitHub'da kullanıma sunulmuştur.
 
-### The code repository can be accessed from the link below. (It will also be added to GitHub soon.)
-
-### https://glitch.com/~starrus-discord-bot
+### Geliştirici: [Coanertinus](https://linktr.ee/coaaaa)
+### TEAM STARRUS
