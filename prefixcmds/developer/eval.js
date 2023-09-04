@@ -1,7 +1,7 @@
 module.exports = {
   run: async (client, message, args) => {
 
-  if (message.author.id !== client.settings.config.owner) return;
+  if (message.author.id !== client.settings.config.ownerId) return;
   const {EmbedBuilder} = require(`discord.js`);
 
   try {
