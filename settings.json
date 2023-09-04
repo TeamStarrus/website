@@ -1,0 +1,19 @@
+{
+  "config": {
+    "prefix": "s-",
+    "server": "nnCSmPeaGV",
+    "versions": {
+      "starrus": "23.5.18",
+      "discordjs": "14.13.0",
+      "discordjsrest": "2.0.1",
+      "discordapitypes": "0.37.55",
+      "lastupdatedon": "18 Mayıs 2023"
+    },
+    "owner": "687021258273194016",
+    "logchannel": "912392398322151534",
+    "emotes": {
+      "greenTick": "<:greentick:873518878897102908>",
+      "redTick": "<:redtick:873519733356523520>"
+    }
+  }
+}
