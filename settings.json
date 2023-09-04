@@ -14,6 +14,8 @@
     "emotes": {
       "greenTick": "<:greentick:873518878897102908>",
       "redTick": "<:redtick:873519733356523520>"
-    }
+    },
+    "id": "<YOUR-BOTS-ID>",
+    "token": "<YOUR-BOTS-TOKEN>"
   }
 }
