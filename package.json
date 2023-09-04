@@ -1,0 +1,36 @@
+{
+  "name": "starrus-discord-bot",
+  "version": "23.5.18",
+  "description": "README.md",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@discordjs/rest": "^2.0.1",
+    "ascii-table": "^0.0.9",
+    "better-sqlite3": "^8.6.0",
+    "discord-api-types": "^0.37.55",
+    "discord.js": "^14.13.0",
+    "fs": "^0.0.2",
+    "ms": "^2.1.3",
+    "quick.db": "^9.1.7",
+    "request": "^2.88.2",
+    "util": "^0.12.5"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "repository": {
+    "url": "https://github.com/TeamStarrus/Starrus-Discord-Bot"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bot",
+    "discord",
+    "discord bot",
+    "starrus",
+    "starrus bot",
+    "coanertinus",
+    "coanertinus bot"
+  ]
+}
