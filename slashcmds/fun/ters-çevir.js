@@ -11,6 +11,6 @@ module.exports = {
     ),
   run: async (client, interaction) => {
     const text = interaction.options.getString(`yazı`);
-    await interaction.followUp({content: text.split(``).reverse().join(``), allowedMentions: {repliedUser: false}});
+    await interaction.followUp({content: text.split(``).reverse().join(``)});
   },
 };
