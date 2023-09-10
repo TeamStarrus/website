@@ -4,15 +4,12 @@ module.exports = {
   client.user.setPresence({
     activities: [{
       name: `@${client.user.username} • /yardım • /destek`,
-      type: `WATCHING`
+      type: `WATCHING` // competing - listening - playing - streaming - watching
     }],
-    status: `online`
+    status: `online` // dnd - idle - invisible - online
   });
 
   console.log(`✔️ ${client.user.tag} başarıyla aktif edildi!`);
 
   },
 };
-
-// status: dnd - idle - invisible - online
-// activities: competing - listening - playing - streaming - watching
