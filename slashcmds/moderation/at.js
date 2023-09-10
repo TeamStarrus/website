@@ -4,16 +4,8 @@ module.exports = {
   data: new SlashCommandBuilder()
     .setName(`at`)
     .setDescription(`Belirtilen üyeyi sunucudan atar.`)
-    .addUserOption(option => option
-      .setName(`üye`)
-      .setDescription(`Atmak istediğin üyeyi seç.`)
-      .setRequired(true)
-    )
-    .addStringOption(option => option
-      .setName(`sebep`)
-      .setDescription(`Üyeyi atma sebebini yaz.`)
-      .setRequired(false)
-    ),
+    .addUserOption(option => option.setName(`üye`).setDescription(`Atmak istediğin üyeyi seç.`).setRequired(true))
+    .addStringOption(option => option.setName(`sebep`).setDescription(`Üyeyi atma sebebini yaz.`).setRequired(false)),
   run: async (client, interaction) => {
     if (!interaction.member.permissions.has(`KICK_MEMBERS`)) return interaction.followUp({content: `${client.config.s.ticks.red} Bu komutu kullanabilmek için \`Üyeleri At\` iznine sahip olmalısın!`, ephemeral: true}).then(sent => {setTimeout(function() {sent.delete()}, 5000)}).catch(err => {});
     const user = interaction.options.getUser(`üye`), member = interaction.guild.members.cache.get(user.id) || await interaction.guild.members.fetch(user.id).catch(err => {});
