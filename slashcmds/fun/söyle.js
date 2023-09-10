@@ -12,6 +12,6 @@ module.exports = {
   run: async (client, interaction) => {
     if (!interaction.member.permissions.has(`MANAGE_MESSAGES`)) return interaction.followUp({content: `${client.config.s.ticks.red} Bu komutu kullanabilmek için \`Mesajları Yönet\` iznine sahip olmalısın!`, ephemeral: true}).then(sent => {setTimeout(function() {sent.delete()}, 3000)}).catch(err => {});
     const text = interaction.options.getString(`yazı`); await interaction.deleteReply().catch(err => {});
-    await interaction.channel.send({content: text, allowedMentions: {repliedUser: false}});
+    await interaction.channel.send({content: text});
   },
 };
