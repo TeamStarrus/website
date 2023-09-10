@@ -11,16 +11,8 @@ module.exports = {
 
   const {ActionRowBuilder, ButtonBuilder, ButtonStyle} = require(`discord.js`);
 
-  let row = new ActionRowBuilder()
-  .addComponents(
-    new ButtonBuilder()
-    .setStyle(ButtonStyle.Link)
-    .setLabel(`Destek sunucusuna katıl!`)
-    .setURL(`https://discord.com/invite/${client.settings.config.server}`)
-  );
-
-  let errorMessage = `${client.settings.config.emotes.redTick} Komut yürütülürken bir hata oluştu! `, errorMessage2 = `\nLütfen bu hatayı destek ekibimize bildiriniz.`
-
+  let row = new ActionRowBuilder().addComponents(new ButtonBuilder().setStyle(ButtonStyle.Link).setLabel(`Destek sunucusuna katıl!`).setURL(`https://discord.gg/${client.config.s.guildInvite}`));
+  let errorMessage = `${client.config.s.ticks.red} Komut yürütülürken bir hata oluştu! `, errorMessage2 = `\nLütfen bu hatayı destek ekibimize bildiriniz.`;
   if (!command) return interaction.followUp({content: errorMessage + `\`(Command not found.)\`` + errorMessage2, components: [row], ephemeral: true});
 
   try {
