@@ -14,6 +14,6 @@ module.exports = {
     String.prototype.replaceAll = function (find, replace) {var str = this; return str.replace(new RegExp(find.replace(/[-\/\\^$*+?.()|[\]{}]/g, `\\$&`), `g`), replace)};
     if (text.slice(0).join(` `).length <= 5) return interaction.followUp({content: `${client.config.s.ticks.red} En az 5 harf kullanmalısınız.`});
     let chimped = text.slice(0).join(` `), replaced = chimped.replaceAll(`a`, `aga`).replaceAll(`e`, `ege`).replaceAll(`i`, `igi`).replaceAll(`ı`, `igi`).replaceAll(`o`, `ogo`).replaceAll(`ö`, `ogo`).replaceAll(`u`, `ugu`).replaceAll(`ü`, `ugu`);
-    return interaction.followUp({content: replaced, allowedMentions: {repliedUser: false}});
+    await interaction.followUp({content: replaced, allowedMentions: {repliedUser: false}});
   },
 };
