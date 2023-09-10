@@ -4,16 +4,8 @@ module.exports = {
   data: new SlashCommandBuilder()
     .setName(`engelle`)
     .setDescription(`Belirtilen üyeyi sunucudan engeller.`)
-    .addUserOption(option => option
-      .setName(`üye`)
-      .setDescription(`Engellemek istediğin üyeyi seç.`)
-      .setRequired(true)
-    )
-    .addStringOption(option => option
-      .setName(`sebep`)
-      .setDescription(`Üyeyi engelleme sebebini yaz.`)
-      .setRequired(false)
-    ),
+    .addUserOption(option => option.setName(`üye`).setDescription(`Engellemek istediğin üyeyi seç.`).setRequired(true))
+    .addStringOption(option => option.setName(`sebep`).setDescription(`Üyeyi engelleme sebebini yaz.`).setRequired(false)),
   run: async (client, interaction) => {
   	if (!interaction.member.permissions.has(`BAN_MEMBERS`)) return interaction.followUp({content: `${client.config.s.ticks.red} Bu komutu kullanabilmek için \`Üyeleri Engelle\` iznine sahip olmalısın!`, ephemeral: true}).then(sent => {setTimeout(function() {sent.delete()}, 5000)}).catch(err => {});
     const user = interaction.options.getUser(`üye`), member = interaction.guild.members.cache.get(user.id) || await interaction.guild.members.fetch(user.id).catch(err => {});
