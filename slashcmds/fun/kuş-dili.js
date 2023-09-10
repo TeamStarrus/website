@@ -4,11 +4,7 @@ module.exports = {
   data: new SlashCommandBuilder()
     .setName(`kuş-dili`)
     .setDescription(`Yazdığınız yazıyı kuş diline çevirir.`)
-    .addStringOption(option => option
-      .setName(`yazı`)
-      .setDescription(`Kuş diline çevirmek istediğiniz yazıyı girin.`)
-      .setRequired(true)
-    ),
+    .addStringOption(option => option.setName(`yazı`).setDescription(`Kuş diline çevirmek istediğiniz yazıyı girin.`).setRequired(true)),
   run: async (client, interaction) => {
     const text = interaction.options.getString(`yazı`);
     String.prototype.replaceAll = function (find, replace) {var str = this; return str.replace(new RegExp(find.replace(/[-\/\\^$*+?.()|[\]{}]/g, `\\$&`), `g`), replace)};
