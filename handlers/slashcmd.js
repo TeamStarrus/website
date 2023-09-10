@@ -1,8 +1,5 @@
-const {readdirSync} = require(`fs`),
-ascii = require(`ascii-table`);
-
-let table = new ascii(`Uygulama Komutları`);
-table.setHeading(`Uygulama Komutu`, `Durum`);
+const {readdirSync} = require(`fs`), ascii = require(`ascii-table`);
+let table = new ascii(`Uygulama Komutları`); table.setHeading(`Uygulama Komutu`, `Durum`);
 
 module.exports = (client) => {
 
