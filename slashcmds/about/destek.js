@@ -9,13 +9,7 @@ module.exports = {
 
   const {ActionRowBuilder, ButtonBuilder, ButtonStyle} = require(`discord.js`);
 
-  let row = new ActionRowBuilder()
-  .addComponents(
-    new ButtonBuilder()
-    .setStyle(ButtonStyle.Link)
-    .setLabel(`Destek sunucusuna katıl!`)
-    .setURL(`https://discord.com/invite/${client.settings.config.server}`)
-  );
+  let row = new ActionRowBuilder().addComponents(new ButtonBuilder().setStyle(ButtonStyle.Link).setLabel(`Destek sunucusuna katıl!`).setURL(`https://discord.gg/${client.config.s.guildInvite}`));
 
 	await interaction.followUp({content: `${client.user.username} ile ilgili bir sorunuz veya sorununuz varsa, komutlarda bir hata bulduysanız ya da bize bir öneride bulunmak istiyorsanız aşağıdaki butonu kullanarak destek sunucumuza katılabilirsiniz.`, components: [row]});
 
