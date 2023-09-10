@@ -2,9 +2,7 @@ const {readdirSync} = require(`fs`), ascii = require(`ascii-table`);
 let table = new ascii(`Etkinlikler`); table.setHeading(`Etkinlik`, `Durum`);
 
 module.exports = (client) => {
-
   const commands = readdirSync(`./events`).filter(file => file.endsWith(`.js`));
-
   for (let file of commands) {
     try {
       let pull = require(`../events/${file}`);
@@ -20,7 +18,5 @@ module.exports = (client) => {
       table.addRow(file, `❌`);
     };
   };
-
   console.log(table.toString());
-
 };
