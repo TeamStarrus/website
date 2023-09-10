@@ -11,3 +11,7 @@
 ### [Discord](https://gg.gg/teamstarrus)
 ### [Instagram](https://instagram.com/teamstarrus)
 ### [X (Twitter)](https://x.com/teamstarrus)
+
+Indent mode: Spaces
+Indent size: 2
+Line wrap mode: Soft wrap
