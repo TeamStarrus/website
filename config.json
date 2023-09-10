@@ -1,21 +1,14 @@
 {
   "s": {
-    "prefix": "s-",
-    "server": "nnCSmPeaGV",
-    "versions": {
-      "starrus": "23.5.18",
-      "discordjs": "14.13.0",
-      "discordjsrest": "2.0.1",
-      "discordapitypes": "0.37.55",
-      "lastupdatedon": "18 Mayıs 2023"
-    },
+    "token": "greatLongComplexToken",
+    "clientId": "711945179535245323",
     "ownerId": "687021258273194016",
-    "logChannel": "<LOG-CHANNELS-ID>",
-    "emotes": {
-      "greenTick": "<:greentick:873518878897102908>",
-      "redTick": "<:redtick:873519733356523520>"
-    },
-    "clientId": "<YOUR-BOTS-CLIENTID>",
-    "token": "<YOUR-BOTS-TOKEN>"
+    "logChannel": "848229197344538655",
+    "guildInvite": "nnCSmPeaGV",
+    "prefix": "s-",
+    "ticks": {
+      "green": "<:greentick:873518878897102908>",
+      "red": "<:redtick:873519733356523520>"
+    }
   }
 }
