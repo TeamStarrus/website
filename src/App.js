@@ -29,7 +29,7 @@ function App() {
           />
           <LinkButton
             text="View Source Code"
-            link="https://github.com/coa262/StarrusDiscordBot"
+            link="https://github.com/TeamStarrus/bot"
             color="#509E2F"
           />
         </div>
