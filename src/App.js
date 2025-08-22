@@ -20,17 +20,17 @@ function App() {
           <LinkButton
             text="Add Bot to Your Server"
             link="https://discord.com/oauth2/authorize?client_id=711945179535245323&permissions=8&integration_type=0&response_type=code&scope=applications.commands+bot"
-            color="#0057B7"
+            color="#FFFFFF"
           />
           <LinkButton
             text="Join Support Server"
             link="https://discord.com/invite/nnCSmPeaGV"
-            color="#FFD700"
+            color="#0032A0"
           />
           <LinkButton
             text="View Source Code"
             link="https://github.com/coa262/StarrusDiscordBot"
-            color="#99AAB5"
+            color="#DA291C"
           />
         </div>
       </div>
