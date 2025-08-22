@@ -9,7 +9,7 @@ function App() {
       <div className="content">
         <BotProfile
           imageUrl="https://cdn.discordapp.com/avatars/711945179535245323/625c29ea1e00e3708da5ef4ffbb55357.png"
-          botName="Botunuzun Adı"
+          botName="Starrus"
         />
 
         <p className="description">
