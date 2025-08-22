@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #121212; /* Yumuşak siyah */
+  color: #f0f0f0; /* Beyazımsı yazı rengi */
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  max-width: 600px;
+}
+
+.description {
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.5;
+  color: #99aab5;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
